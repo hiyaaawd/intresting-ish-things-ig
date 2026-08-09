@@ -1,0 +1,37 @@
+kinda intresting ig but they have a like 2014 openssh running on it and firmware is unecrypted but its mumbled to hell so no luck getting root password :( but 100 percent is root on it 
+"admin
+TDDP[%s(%d)]:Current key is : %d %d %d %d %d %d %d %d .
+RE_ONEKEY
+extPassword
+%s(%d)pRepeaterInfo[%d].password: %s
+%s(%d)pRepeaterInfo[%d].extPassword: %s
+isPasswordModifiable
+%s(%d)setAuthInfo :: Old password wrong
+-----BEGIN RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
+-----BEGIN EC PRIVATE KEY-----
+-----END EC PRIVATE KEY-----
+gdpr key haven't configed,don't encrypt.
+gdpr key haven't configed,can't decrypt!
+Aes Key check failed!
+pAesKey=%s,pAesIv=%s.
+SetAes key failed!
+local key:%s
+Gpdr get rsa public key failed!
+ptmpKey or ptmpIv is NULL
+AesSetLocalKey error!
+----------- Set Key Begin -----------
+----------- Set Key End -----------
+RSA_generate_key error,use default value.
+Generate RSA key success!
+rsa_initial_key Error!
+root
+ip6pass
+ write id 1|1,0,0 authKey WaQ7xbhc9TefbwK
+[rsa]%s() %d rsaPubKey malloc
+[rsa]%s() %d Use fast math, rsakeySize %d
+[rsa]%s() %d RsaPublicKeyDecodeRaw
+-----BEGIN RSA PRIVATE KEY-----"
+
+and so on intrestingly a admin account thingy too no generic root blank or admin pass works on the ssh and it needs a mountain of legacy flags lol " ssh -o HostKeyAlgorithms=+ssh-dss -o PubkeyAcceptedKeyTypes=+ssh-dss -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,aes256-cbc -o MACs=+hmac-sha1,hmac-md5 root@192.168.1.243"
+but its porbably nothing i could PORBABBLYYY find the login but im too dumb to figure out how to unmumble the mess binwalk extracts it too but maybe one day lol
